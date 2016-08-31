@@ -10,7 +10,7 @@ public class task2_3 {
                 si=i;
             }
         }
-        if (si==1) {System.out.println(" No owner");
+        if (si== -1) {System.out.println(" No owner");
             newBalanc=-1;}
         newBalanc= balances[si]- withdrawal-withdrawal*0.05;
         if (newBalanc>=0){
