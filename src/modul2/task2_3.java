@@ -2,13 +2,11 @@ package modul2;
 
 
 public class task2_3 {
-    static   double tk2_3(  int[] balances,String[] ownerNames,String ownerName, double withdrawal ){
+    static  private double tk2_3(  int[] balances,String[] ownerNames,String ownerName, double withdrawal ){
         int si=-1;
         double newBalanc=-1;
         for (int i = 0; i < balances.length; i++) {
-            if( ownerNames[i]==ownerName){
-                si=i;
-            }
+            if( ownerNames[i].equals(ownerName)) si = i;
         }
         if (si== -1) {System.out.println(" No owner");
             newBalanc=-1;}
