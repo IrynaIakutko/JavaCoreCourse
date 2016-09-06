@@ -31,7 +31,7 @@ public class Solution {
         Student boris = new Student("Boris", "Yakimov", 71);
 
         // 8 public CollegeStudent(String collegeName, int rating, long id)
-        CollegeStudent lora = new CollegeStudent("OKKT", 41, 2431);
+        CollegeStudent lora = new CollegeStudent("OKKT", "41", 2431);
 
         //  9 public CollegeStudent(String lastName, Course[] coursesTaken)
         CollegeStudent Vika = new CollegeStudent("Zayceva", coursesTaken);
@@ -39,14 +39,16 @@ public class Solution {
         // 10  public CollegeStudent(String firstName, String lastName, int group)
         CollegeStudent nastya = new CollegeStudent("Nastya", "Rulikova", 32);
 
-        //  11  public SpecialStudent(String collegeName, int rating, long id)
-        SpecialStudent alla = new SpecialStudent("OKKT", 12, 345);
+        //  11 public SpecialStudent(String firstName, String lastName, int group,String collegeName,int rating,long id) {
 
-        // 12 public SpecialStudent(String firstName, String lastName, int group)
-        SpecialStudent genya = new SpecialStudent("Genya", "Yakus", 24);
+        SpecialStudent alla = new SpecialStudent("alla","demidova", 12,"OKKT", 345,12);
 
-        // 13 public SpecialStudent(long secretKey
-        SpecialStudent yoriy = new SpecialStudent(1245);
+        // 12 SpecialStudent(String firstName, String lastName, int group,String collegeName,int rating,long id,long secretKey) {
+       //public SpecialStudent(String firstName, String lastName, int group)
+        SpecialStudent genya = new SpecialStudent("Genya","Voroncov", 17,"OKKT", 346,15);
+
+        // 13 public SpecialStudent(String lastName, Course[] coursesTaken) {
+        SpecialStudent yoriy = new SpecialStudent("Tvardov", coursesTaken);
 
     }
 

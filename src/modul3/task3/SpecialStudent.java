@@ -1,20 +1,20 @@
 package modul3.task3;
 
-public class SpecialStudent extends CollegeStudent  {
+class SpecialStudent extends CollegeStudent  {
     //  Create three constructors: two the same as in CollegeStudend and one with secretKey field.
 
-    long secretKey;
-    String email;
+    private long secretKey;
+    private String email;
 
-    public SpecialStudent(String collegeName, int rating, long id) {
-        super(collegeName,rating,id);
+    SpecialStudent(String lastName, Course[] coursesTaken) {
+        super(lastName,coursesTaken);
     }
 
-    public SpecialStudent(String firstName, String lastName, int group) {
-        super(firstName, lastName, group);
+    SpecialStudent(String firstName, String lastName, int group, String collegeName, int rating, long id) {
+        super(firstName,lastName,group,collegeName,rating,id);
     }
-    public SpecialStudent(long secretKey) {
-
+    public SpecialStudent(String firstName, String lastName, int group,String collegeName,int rating,long id,long secretKey) {
+        super(firstName,lastName,group,collegeName,rating,id);
         this.secretKey = secretKey;
     }
 

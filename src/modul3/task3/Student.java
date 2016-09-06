@@ -1,15 +1,14 @@
 package modul3.task3;
 
-/**
- * Created by Lenovo on 02.09.2016.
- */
-public class Student {
-    protected String firstName;
-    protected String lastName;
-    protected int group;
-   protected Course[] coursesTaken;
+class Student {
+    private String firstName;
+  private String lastName;
+   private int group;
+ private Course[] coursesTaken;
     private int age;
-   // With 2 constructors firstName, lastName, group; and lastName, coursesTaken.
+
+
+    // With 2 constructors firstName, lastName, group; and lastName, coursesTaken.
 
     public void setAge(int age) {
         this.age = age;
@@ -60,12 +59,12 @@ public class Student {
         return firstName;
     }
 
-    public Student(String lastName, Course[] coursesTaken) {
+    Student(String lastName, Course[] coursesTaken) {
         this.lastName = lastName;
         this.coursesTaken = coursesTaken;
     }
 
-    public Student(String firstName, String lastName, int group) {
+     Student(String firstName, String lastName, int group) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.group = group;

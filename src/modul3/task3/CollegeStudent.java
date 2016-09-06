@@ -1,10 +1,11 @@
 package modul3.task3;
 
 
-public class CollegeStudent extends Student {
+class CollegeStudent extends Student {
     private String collegeName;
     private int rating;
     private long id;
+
 
     public long getId() {
         return id;
@@ -27,24 +28,42 @@ public class CollegeStudent extends Student {
     }
 
 
-    public CollegeStudent(String collegeName, int rating, long id) {
-        this.collegeName = collegeName;
-        this.rating = rating;
-        this.id = id;
+    CollegeStudent(String firstName, String lastName, int group, String collegeName, int rating, long id){
+        super(firstName,lastName,group);
+        this.collegeName=collegeName;
+        this.rating=rating;
+        this.id=id;
+    }
+    CollegeStudent(String lastName, Course[] coursesTaken) {
+        super(lastName,coursesTaken);
+    }
+    CollegeStudent(String firstName, String lastName, int group){
+        super(firstName,lastName,group);
     }
 
-    public CollegeStudent(String lastName, Course[] coursesTaken) {
-        super.lastName = lastName;
-        super.coursesTaken= coursesTaken;
+   // public Student(String lastName, Course[] coursesTaken) {
+   //     this.lastName = lastName;
+   //     this.coursesTaken = coursesTaken;
+   // }
+
+//    public Student(String firstName, String lastName, int group) {
+ //       this.firstName = firstName;
+  //      this.lastName = lastName;
+   //     this.group = group;
+
+   // public CollegeStudent(String firstName, String lastName, int group) {
+    //    super(firstName, lastName, group);
+
     }
 
-    public CollegeStudent(String firstName, String lastName, int group) {
-        super.firstName = firstName;
-        super.lastName = lastName;
-        super.group = group;
-    }
+   // public CollegeStudent(String firstName, String lastName, int group) {
+    //    Student(firstName, lastName, group);
+    //    super.firstName = firstName;
+    //    super.lastName = lastName;
+    //    super.group = group;
+   // }
 
-    }
+
 
 
 

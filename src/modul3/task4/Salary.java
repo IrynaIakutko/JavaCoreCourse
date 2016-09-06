@@ -13,17 +13,17 @@ public class Salary {
 
         user1.withdraw(1000);
         balance=user1.getBalance();
-        System.out.println("balance-withdraw(1000)" + name + balance);
+        System.out.println("balance-withdraw(1000)" + name +"="+ balance);
 
         String comp = user1.getCompanyName();
         int lcomp=user1.companyNameLenfht();
-        System.out.println("lenght company name" + comp + lcomp);
+        System.out.println("lenght company name  " + comp+ "="+ lcomp);
 
         int month =user1.getMonthsOfEmployment();
-        System.out.println("MonthsOfEmployment" +month);
+        System.out.println("MonthsOfEmployment=" +month);
         user1.monthIncreaser(3);
-        int month =user1.getMonthsOfEmployment();
-        System.out.println("MonthsOfEmployment+3" +month);
+        month =user1.getMonthsOfEmployment();
+        System.out.println("MonthsOfEmployment+3=" +month);
 
 
 
