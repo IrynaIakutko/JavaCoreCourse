@@ -11,15 +11,27 @@ public class Room {
     private String cityName;
 
     @Override
-    public boolean equals(Object o) {
-      // if (0 ==null )  return  false;
+    public String toString() {
+        return "Room{" +
+                "id=" + id +
+                ", price=" + price +
+                ", persons=" + persons +
+                ", dateAvailableFrom=" + dateAvailableFrom +
+                ", hotelName='" + hotelName + '\'' +
+                ", cityName='" + cityName + '\'' +
+                '}';
+    }
 
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Room room = (Room) o;
-        return price == room.price &&
-                persons == room.persons &&
-                Objects.equals(cityName, room.cityName);
+    @Override
+
+
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Room room = (Room) o;
+            return price == room.price &&
+                    persons == room.persons &&
+                    Objects.equals(cityName, room.cityName);
     }
 
     @Override
