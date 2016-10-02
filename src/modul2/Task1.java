@@ -1,4 +1,5 @@
 package modul2;
+import modul6.ArraysUtils.*;
 
 
 public class Task1 {
@@ -163,41 +164,63 @@ static int modulus(int array[]){
         int allint;
 
         double alldb;
-
-        int[] arraint = {-77,1200, 250,7, -2000, -500,4, 3200,15,2};
+        int[] rezAr;
+        double[] rezAr1;
+        int[] arraint = {-77,1200, 250,7, -2000, -500,4, 3200,15,2,-77,250};
         double [] arraydb = {66.35,-1200.45,- 250.12,7.3, 2000.6, -500,4.5, -3200.9,154.5,2.3};
-        allint= sum(arraint);
+        allint= modul6.ArraysUtils.sum(arraint);
         System.out.println("sum int ="+allint);
-        alldb= sum(arraydb);
+        alldb= modul6.ArraysUtils.sum(arraydb);
         System.out.println("sum double="+ alldb);
-        allint= min(arraint);
+        allint= modul6.ArraysUtils.min(arraint);
         System.out.println("min int="+ allint);
-        allint= max(arraint);
+        allint= modul6.ArraysUtils.max(arraint);
         System.out.println("max int="+ allint);
-        alldb= min(arraydb);
+        alldb= modul6.ArraysUtils.min(arraydb);
         System.out.println("min double="+ alldb);
-        allint = maxPositive(arraint);
+        allint = modul6.ArraysUtils.maxPositive(arraint);
         System.out.println("max int Positiv="+ allint);
-
-
-
-        alldb= max(arraydb);
+        alldb= modul6.ArraysUtils.max(arraydb);
         System.out.println("max double="+ alldb);
-        alldb = maxPositive(arraydb);
+        alldb = modul6.ArraysUtils.maxPositive(arraydb);
         System.out.println("max double Positiv="+alldb);
-        allint=multiplication(arraint);
+        allint=modul6.ArraysUtils.multiplication(arraint);
         System.out.println("mul int ="+ allint);
-        alldb=multiplication(arraydb);
+        alldb=modul6.ArraysUtils.multiplication(arraydb);
         System.out.println("mul double ="+ alldb);
-        alldb= modulus(arraydb);
+        alldb= modul6.ArraysUtils.modulus(arraydb);
         System.out.println("modus double ="+ alldb);
-        allint=modulus(arraint);
+        allint=modul6.ArraysUtils.modulus(arraint);
         System.out.println("modus int ="+ allint);
-        allint=secondLargest(arraint);
+        allint=modul6.ArraysUtils.secondLargest(arraint);
         System.out.println("secondLargest int ="+ allint);
-        alldb=secondLargest(arraydb);
+        alldb=modul6.ArraysUtils.secondLargest(arraydb);
         System.out.println("secondLargest db ="+ alldb);
+        System.out.println(" ");
+        System.out.println("findEvenElements");
+        for (int i=0;i<arraint.length;i++){
+            System.out.print(" "+arraint[i]+" ");
 
+        }
+        System.out.println("EvenElements ");
+        rezAr= (modul6.ArraysUtils.findEvenElements(arraint));
+        for (int i=0;i<rezAr.length;i++){
+            System.out.print(" "+rezAr[i]+" ");
+        }
+        System.out.println(" ");
+        System.out.println("reverse");
+        System.out.println("arraydb");
+
+        for (int i=0;i<arraydb.length;i++){
+            System.out.print(" "+arraydb[i]+" ");
+
+        }
+        System.out.println(" ");
+        System.out.println("reverse");
+        rezAr1= (modul6.ArraysUtils.reverse(arraydb));
+        for (int i=0;i<rezAr1.length;i++){
+            System.out.print(" "+rezAr1[i]+" ");
+        }
 
 
 

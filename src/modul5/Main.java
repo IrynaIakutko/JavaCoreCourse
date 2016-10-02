@@ -8,7 +8,7 @@ public class Main {
 
         Controller controller = new Controller();
         API[] api1=controller.getApis();
-        //Room[] room;
+
         Room[] room1;
         Room[] room2;
         Room[] room3;
