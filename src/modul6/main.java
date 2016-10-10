@@ -27,6 +27,7 @@ public class main {
             System.out.println(rez2[i].toString());
         }
         System.out.println("users");
+        int n=users.length;
        //for (int i= 0;i<users.length;i++)
          //   System.out.println(users[i].toString());
        // User[] users1;
@@ -35,7 +36,12 @@ public class main {
        // for (int i= 0;i<users.length;i++){
        //     System.out.println(users[i].toString());
         //}
+      //  long[] arrayL = new long[n];
 
+     //   arrayL=getUsersId(users);
+       // for (int i= 0;i<rez2.length;i++){
+      //      System.out.println(arrayL[i]);
+      //  }
 
 
     }

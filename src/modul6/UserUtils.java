@@ -46,9 +46,11 @@ public class UserUtils {
     }
     public static long[] getUsersId(User[] users){
         int n= users.length;
+        long a;
         long[]arrayRez= new long[n];
-        for (int i=0; i<n;i++){
-            arrayRez[i]=users[i].getId();
+        for (int i=0; i<n;i++) {
+            a = users[i].getId();
+            arrayRez[i] = a;
         }
         return  arrayRez;
     }

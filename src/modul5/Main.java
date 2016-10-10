@@ -1,13 +1,17 @@
 package modul5;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
 
         Controller controller = new Controller();
-        API[] api1=controller.getApis();
+       // List<API> api1 = new ArrayList<>(controller.getApis());
+
+      API[] api1=controller.getApis();
 
         Room[] room1;
         Room[] room2;
