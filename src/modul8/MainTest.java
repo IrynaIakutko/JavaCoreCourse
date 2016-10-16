@@ -38,8 +38,14 @@ public class MainTest extends AbDAOImpl {
         System.out.println(dao.getList());
 
         dao.deleteAll(list);
-        System.out.println("*************************  dao.deleteAll(list);; /n");
+        System.out.println("*************************  dao.deleteAll(list); /n");
         System.out.println(dao.getList());
+        dao.deleteById(0);
+        System.out.println("*************************  dao.deleteById(0) /n");
+        System.out.println(dao.getList());
+
+        System.out.println("*************************  dao.get(1); /n");
+        System.out.println(dao.get(1));
     }
 
 

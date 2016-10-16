@@ -60,7 +60,22 @@ public class AbDAOImpl<T>implements AbstractDAO<T> {
             i++;
         }
         return newList;
-    };
+    }
+
+    @Override
+    public void deleteById(long id) {
+        int i=(int)(long)id;
+        if (listBD.size()>=id){
+            listBD.remove(i);}
+    }
+
+    @Override
+    public T get(long id) {
+           int i =(int)(long)id;
+                   listBD.get(i);
+
+        return listBD.get(i);
+    } ;
 
 
 }

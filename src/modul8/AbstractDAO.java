@@ -9,5 +9,7 @@ public interface AbstractDAO <T>{
     void deleteAll(List<User> t);
     void saveAll(List<User> t);
     List <T> getList();
+    void deleteById(long id);
+    T get(long id);
 
 }
